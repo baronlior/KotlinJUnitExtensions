@@ -2,10 +2,6 @@ package com.baronlior.junit4
 
 import org.junit.Assert
 
-/**
- * @author liorb
- * @since: 19/08/2017.
- */
 
 fun it (message : String, block: Argument.() -> Unit) {
   val argument = Argument(message)
@@ -33,7 +29,7 @@ class Matcher(private val expectation: String) {
       assert(regex.toRegex().find(this) == null, "expected: <$this> not to match regex <$regex>")
 
   infix fun Int.toBeLessThan(actual : Int) = assert(this < actual, "expected: <$this> to be less than <$actual>") // TODO: support generic number: https://stackoverflow.com/questions/40587118/kotlin-generic-operation-on-number
-
+  infix fun Double.toBeLessThan(actual : Double) = assert(this < actual, "expected: <$this> to be less than <$actual>")
 
   private fun assert(condition : Boolean, message : String) {
     if (!condition){

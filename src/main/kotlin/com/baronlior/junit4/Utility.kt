@@ -1,10 +1,5 @@
 package com.baronlior.junit4
 
-/**
- * @author liorb
- * @since: 19/08/2017.
- */
-
 
 internal fun formatEqualityErrorMessage(actual: Any?, expected: Any?): String {
 
