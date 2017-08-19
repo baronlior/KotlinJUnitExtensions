@@ -17,7 +17,7 @@ class Documentation {
       val message = "foo bar baz";
 
       expect { message toMatchRegex "bar" }
-//      expect { message toMatchRegex "quux" }
+      expect { message notToMatchRegex "quux" }
 
     }
   }
