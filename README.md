@@ -46,4 +46,4 @@ class SyntaxDocumentation {
 ## Installation
 Right now: just copy `Assert.kt` and `Utility.kt` to your project
 
-If I'll get more than 10 start to the repository - I'll probably load it to maven
+If I'll get more than 10 start to the repository - I'll probably load it to maven (I'm starting to like the syntax)
