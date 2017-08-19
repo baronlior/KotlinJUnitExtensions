@@ -8,7 +8,7 @@ An example of JUnit extensions in Kotlin, allowing:
 ** `expect(<extra details>) { ... }` format - to expose extra details in the error message in times of failure
 
 ## Syntax Illustrated
-```
+```kotlin
 import org.junit.Test
 import com.baronlior.junit4.Assert
 
