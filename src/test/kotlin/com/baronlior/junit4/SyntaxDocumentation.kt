@@ -23,11 +23,6 @@ class SyntaxDocumentation {
           expect {e toBeLessThan PI}
       }
 
-      it("toBe... LessThan, GreaterThan, etc...") {
-          expect { 2 + 2 toBeLessThan 11 }
-          // TBD
-      }
-
       it("The 'toMatch' matcher is for regular expressions") {
           val message = "foo bar baz";
 
