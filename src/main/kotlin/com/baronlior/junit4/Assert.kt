@@ -14,7 +14,7 @@ fun it (message : String, block: Argument.() -> Unit) {
 class Matcher(private val expectation: String) {
 
   infix fun Any?.toBe(actual: Any?) = assert(this == actual, formatEqualityErrorMessage(this, actual))
-  infix fun Any?.notToBe(actual: Any?) = assert(this != actual, "expected: not equal but was: both <$actual>") // TODO: original:         String formatted = "Values should be different. ";
+  infix fun Any?.notToBe(actual: Any?) = assert(this != actual, "expected: not equal but was: both <$actual>") // TODO: original:  String formatted = "Values should be different. ";
 
   // toBeSame - ===
 

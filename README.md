@@ -9,7 +9,10 @@ An example of JUnit extensions in Kotlin, allowing:
 
 ## Syntax Illustrated
 ```
+import org.junit.Test
 import com.baronlior.junit4.Assert
+
+class SyntaxDocumentation {
 
   @Test
   fun myTestMethod() {
@@ -19,7 +22,7 @@ import com.baronlior.junit4.Assert
           expect { null toBe null }
           expect { 1 to "2" toBe Pair(1,"2") }
 
-          expect { "2" + "2" notToBe "4" }
+          expect ("string concatenation") { "2" + "2" notToBe "4" }
           expect { "null" notToBe null }
       }
 
@@ -42,8 +45,10 @@ import com.baronlior.junit4.Assert
           expect { message notToMatchRegex "quux" }
       }
   }
+}
 ```
 
 ## Installation
 Right now: just copy `Assert.kt` and `Utility.kt` to your project
+
 If I'll get more than 10 start to the repository - I'll probably load it to maven
