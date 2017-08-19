@@ -16,8 +16,8 @@ class Documentation {
     it("The 'toMatch' matcher is for regular expressions") {
       val message = "foo bar baz";
 
-      expect { message toMatch "bar" }
-//      expect { message toMatch "quux" }
+      expect { message toMatchRegex "bar" }
+//      expect { message toMatchRegex "quux" }
 
     }
   }
