@@ -7,7 +7,7 @@ class SyntaxDocumentation {
   @Test
   fun myTestMethod() {
 
-      it("The 'toBe' matcher compares with ===") {
+      it("The 'toBe' matcher compares with .equals()") {
           expect { 2 + 2 toBe 4 }
           expect { null toBe null }
           expect { 1 to "2" toBe Pair(1,"2") }

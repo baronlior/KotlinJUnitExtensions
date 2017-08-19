@@ -17,7 +17,7 @@ class SyntaxDocumentation {
   @Test
   fun myTestMethod() {
 
-      it("The 'toBe' matcher compares with ===") {
+      it("The 'toBe' matcher compares with .equals()") {
           expect { 2 + 2 toBe 4 }
           expect { null toBe null }
           expect { 1 to "2" toBe Pair(1,"2") }
@@ -45,5 +45,3 @@ class SyntaxDocumentation {
 
 ## Installation
 Right now: just copy `Assert.kt` and `Utility.kt` to your project
-
-If I'll get more than 10 start to the repository - I'll probably load it to maven (I'm starting to like the syntax)
